@@ -1,0 +1,214 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Portfolio - Nikhil Parihar</title>
+  <meta name="description" content="Portfolio of Nikhil Parihar - Aspiring Data Analyst">
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Header / Navigation -->
+  <header class="site-header">
+    <div class="container nav-container">
+      <a class="brand" href="#">Nikhil Parihar</a>
+      <nav class="nav" id="navbar">
+        <ul>
+          <li><a href="#home" class="nav-link">Home</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#experience" class="nav-link">Experience</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="header-controls">
+        <button id="theme-toggle" aria-label="Toggle dark mode"><i class="fa-solid fa-moon"></i></button>
+        <button class="burger" id="burger" aria-label="Open menu"><i class="fa-solid fa-bars"></i></button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <main>
+    <section id="home" class="hero container">
+      <div class="hero-left">
+        <p class="eyebrow">Welcome</p>
+        <h1>Hello, I am <span class="name">Nikhil Parihar</span></h1>
+        <h2 class="typing"><span id="typed"></span><span class="cursor">|</span></h2>
+        <p class="lead">Data Analyst focused on turning data into actionable insights using SQL, Excel, Power BI and Python.</p>
+        <div class="hero-cta">
+          <button id="download-resume" class="btn primary">Download Resume</button>
+          <a href="#contact" class="btn outline">Contact Me</a>
+        </div>
+      </div>
+      <div class="hero-right">
+        <div class="profile-card">
+          <img src="https://via.placeholder.com/320x320.png?text=Profile" alt="Profile Image" class="profile-img">
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about container">
+      <h3 class="section-title">About Me</h3>
+      <div class="about-grid">
+        <div>
+          <p>I am an aspiring Data Analyst with a passion for Business Intelligence and data-driven decision making. I enjoy exploring datasets, building dashboards, and crafting stories with data.</p>
+          <p><strong>Interests:</strong> Data Analytics, Business Intelligence, Dashboarding, SQL, Python.</p>
+        </div>
+        <div class="education">
+          <h4>Education</h4>
+          <p>Bachelor's Degree in [Your Major] — <em>[Your University]</em></p>
+          <p>Relevant coursework: Statistics, Database Systems, Data Visualization.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills container">
+      <h3 class="section-title">Skills</h3>
+      <div class="skills-grid">
+        <!-- Individual skill cards -->
+        <div class="skill-card"><i class="fa-solid fa-database"></i><span>SQL</span></div>
+        <div class="skill-card"><i class="fa-solid fa-server"></i><span>MySQL</span></div>
+        <div class="skill-card"><i class="fa-solid fa-file-excel"></i><span>Excel</span></div>
+        <div class="skill-card"><i class="fa-brands fa-microsoft"></i><span>Power BI</span></div>
+        <div class="skill-card"><i class="fa-brands fa-python"></i><span>Python</span></div>
+        <div class="skill-card"><i class="fa-solid fa-chart-simple"></i><span>Data Visualization</span></div>
+        <div class="skill-card"><i class="fa-solid fa-square-poll-vertical"></i><span>Statistics</span></div>
+        <div class="skill-card"><i class="fa-solid fa-chart-line"></i><span>Dashboard Dev</span></div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects container">
+      <h3 class="section-title">Projects</h3>
+      <div class="projects-grid">
+        <!-- Project card template -->
+        <article class="project-card">
+          <img src="https://via.placeholder.com/600x400.png?text=Project+1" alt="Project 1">
+          <div class="project-body">
+            <h4>Sales Dashboard</h4>
+            <p>Interactive sales dashboard with filtering and regional analysis.</p>
+            <p class="tech">Technologies: Power BI, SQL, Excel</p>
+            <div class="project-actions">
+              <a href="#" class="btn small"><i class="fa-brands fa-github"></i> GitHub</a>
+              <a href="#" class="btn small outline">Live Demo</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <img src="https://via.placeholder.com/600x400.png?text=Project+2" alt="Project 2">
+          <div class="project-body">
+            <h4>Customer Segmentation</h4>
+            <p>Clustering customers using RFM analysis to inform marketing strategies.</p>
+            <p class="tech">Technologies: Python, SQL</p>
+            <div class="project-actions">
+              <a href="#" class="btn small"><i class="fa-brands fa-github"></i> GitHub</a>
+              <a href="#" class="btn small outline">Live Demo</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <img src="https://via.placeholder.com/600x400.png?text=Project+3" alt="Project 3">
+          <div class="project-body">
+            <h4>Financial KPIs</h4>
+            <p>Automated KPI calculations with visuals for leadership reporting.</p>
+            <p class="tech">Technologies: Excel, SQL</p>
+            <div class="project-actions">
+              <a href="#" class="btn small"><i class="fa-brands fa-github"></i> GitHub</a>
+              <a href="#" class="btn small outline">Live Demo</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <img src="https://via.placeholder.com/600x400.png?text=Project+4" alt="Project 4">
+          <div class="project-body">
+            <h4>Marketing Funnel</h4>
+            <p>End-to-end funnel analysis and visualization for conversion optimization.</p>
+            <p class="tech">Technologies: Power BI, Python</p>
+            <div class="project-actions">
+              <a href="#" class="btn small"><i class="fa-brands fa-github"></i> GitHub</a>
+              <a href="#" class="btn small outline">Live Demo</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience container">
+      <h3 class="section-title">Experience</h3>
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <h4>Data Analyst Intern</h4>
+            <span class="muted">Company ABC — 2025</span>
+            <p>Worked on ETL pipelines, ad-hoc analysis and dashboarding. Achieved a 12% improvement in reporting time via automation.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <h4>Project Lead (Academic)</h4>
+            <span class="muted">University Project — 2024</span>
+            <p>Led a team to build a sales forecasting model and presented insights to stakeholders.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact container">
+      <h3 class="section-title">Contact</h3>
+      <div class="contact-grid">
+        <form id="contact-form" class="contact-form">
+          <label for="name">Name</label>
+          <input id="name" name="name" required>
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" required>
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+          <button type="submit" class="btn primary">Send Message</button>
+          <p id="form-msg" class="form-msg" role="status" aria-live="polite"></p>
+        </form>
+
+        <div class="contact-info">
+          <h4>Let's connect</h4>
+          <p>Feel free to reach out via email or connect on LinkedIn and GitHub.</p>
+          <div class="socials">
+            <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="#" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+            <a href="mailto:nikhil@example.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© 2026 Nikhil Parihar. All Rights Reserved.</p>
+      <div class="socials small">
+        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="#"><i class="fa-brands fa-github"></i></a>
+        <a href="mailto:nikhil@example.com"><i class="fa-solid fa-envelope"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
