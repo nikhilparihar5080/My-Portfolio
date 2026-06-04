@@ -32,7 +32,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // Typing effect for job titles
   const typedEl = document.getElementById('typed');
-  const titles = ['Aspiring Data Analyst', 'SQL | Excel | Power BI', 'Python for Data Analysis'];
+  const titles = ['Experienced Data Analyst', 'SQL | Excel | Python | Power BI', 'Data-driven Insights'];
   let tIndex = 0, cIndex = 0, forward = true;
 
   function typeLoop(){
@@ -59,7 +59,7 @@ document.addEventListener('DOMContentLoaded', () => {
   // Resume download - generate a small text resume and prompt download
   const downloadBtn = document.getElementById('download-resume');
   downloadBtn.addEventListener('click', () => {
-    const content = `Nikhil Parihar - Resume\nAspiring Data Analyst\nSkills: SQL, Excel, Power BI, Python`;
+    const content = `Nikhil Parihar - Resume\nExperienced Data Analyst\nEmail: nikhilpa5080@gmail.com\nPhone: +91 8104455080\nSkills: SQL, Excel, Power BI, Python, Tableau, Statistics`;
     const blob = new Blob([content], { type: 'text/plain' });
     const url = URL.createObjectURL(blob);
     const a = document.createElement('a');
