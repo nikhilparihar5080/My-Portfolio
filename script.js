@@ -2,7 +2,6 @@
 // - Theme toggle
 // - Mobile nav toggle
 // - Typing animation
-// - Resume download generator
 // - Smooth active nav highlighting
 document.addEventListener('DOMContentLoaded', () => {
   const root = document.documentElement;
@@ -55,18 +54,6 @@ document.addEventListener('DOMContentLoaded', () => {
     setTimeout(typeLoop, forward ? 120 : 50);
   }
   typeLoop();
-
-  // Resume download - generate a small text resume and prompt download
-  const downloadBtn = document.getElementById('download-resume');
-  downloadBtn.addEventListener('click', () => {
-    const content = `Nikhil Parihar - Resume\nExperienced Data Analyst\nEmail: nikhilpa5080@gmail.com\nPhone: +91 8104455080\nSkills: SQL, Excel, Power BI, Python, Tableau, Statistics`;
-    const blob = new Blob([content], { type: 'text/plain' });
-    const url = URL.createObjectURL(blob);
-    const a = document.createElement('a');
-    a.href = url; a.download = 'Nikhil_Parihar_Resume.txt';
-    document.body.appendChild(a); a.click(); a.remove();
-    URL.revokeObjectURL(url);
-  });
 
   // Active nav highlighting on scroll
   const sections = document.querySelectorAll('main section[id]');
